@@ -67,8 +67,15 @@ contactForm.addEventListener('submit', function(e) {
   submitBtn.disabled = true;
   submitText.textContent = currentLang === 'it' ? 'Invio in corso...' : 'Sending...';
   var fd = new FormData(contactForm);
-  fetch('./plugin/php/sender.php', { method: 'POST', body: fd })
-    .then(function(res) { return res.json(); })
+  fetch('https://formspree.io/f/mwlvrnja', {
+    method: 'POST',
+    body: fd,
+    headers: { 'Accept': 'application/json' }
+  })
+    .then(function(res) {
+      if (!res.ok) throw new Error('Invio fallito: ' + res.status);
+      return res.json();
+    })
     .then(function(data) {
       submitText.textContent = currentLang === 'it' ? '\u2713 Inviato!' : '\u2713 Sent!';
       submitBtn.style.background = '#22c55e';
