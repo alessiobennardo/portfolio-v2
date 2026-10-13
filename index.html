@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alessio Bennardo â€” Cloud &amp; DevOps Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo">AB<span>.dev</span></a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#about" id="nav-about">About</a></li>
+    <li><a href="#skills" id="nav-skills">Skills</a></li>
+    <li><a href="#qualifiche" id="nav-qual">Qualifiche</a></li>
+    <li><a href="#certificazioni" id="nav-cert">Certificazioni</a></li>
+    <li><a href="#contact" id="nav-contact">Contatti</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button>
+    <button class="nav-hamburger" id="hamburger" onclick="toggleMenu()">&#9776;</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Ciao, sono<br><span class="accent">Alessio Bennardo</span></h1>
+    <div class="hero-role"><span id="typewriter" class="typewriter"></span></div>
+    <p id="hero-desc">Laureato in Ingegneria Informatica, certificato AWS e Oracle Cloud. Mi occupo di automazione, rilasci applicativi in ambito cloud/ibrido. Progetto e gestisco infrastrutture cloud scalabili, pipeline CI/CD e sistemi automatizzati.</p>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn-primary" id="cta-contact">&#9993; Contattami</a>
+      <a href="assets/pdf/Alessio Bennardo.pdf" download class="btn-outline" id="cta-cv">&#11015; Scarica CV</a>
+    </div>
+    <div class="hero-socials">
+      <a href="https://www.linkedin.com/in/alessiobennardo/" class="social-icon" target="_blank" rel="noopener" title="LinkedIn">in</a>
+      <a href="https://github.com/alessiobennardo" class="social-icon" target="_blank" rel="noopener" title="GitHub">gh</a>
+      <a href="https://wa.me/393271439915" class="social-icon" target="_blank" rel="noopener" title="WhatsApp">wa</a>
+    </div>
+  </div>
+  <div class="hero-image-wrapper">
+    <div class="hero-img-ring">
+      <img src="assets/img/profile.jpg" alt="Alessio Bennardo">
+    </div>
+    <div class="hero-floating-badge">
+      <span class="dot"></span> Cloud &amp; DevOps Engineer
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- STATS -->
+<section style="padding:50px 6%;">
+  <div class="stats-row">
+    <div class="stat-card fade-up"><div class="stat-number">2+</div><div class="stat-label" data-it="Anni di esperienza" data-en="Years of experience">Anni di esperienza</div></div>
+    <div class="stat-card fade-up"><div class="stat-number">5+</div><div class="stat-label" data-it="Certificazioni cloud" data-en="Cloud certifications">Certificazioni cloud</div></div>
+    <div class="stat-card fade-up"><div class="stat-number">&#9729;</div><div class="stat-label">AWS &amp; Oracle Cloud</div></div>
+    <div class="stat-card fade-up"><div class="stat-number">&#127891;</div><div class="stat-label" data-it="Laurea Ing. Informatica" data-en="BSc Computer Engineering">Laurea Ing. Informatica</div></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">// 01. chi sono</div>
+  <div class="section-title fade-up">About me</div>
+  <div class="about-grid">
+    <div class="about-text fade-up">
+      <p id="about-p1"><strong>Cloud &amp; DevOps Engineer</strong> laureato in Ingegneria Informatica all&#39;Universit&#224; di Catania, con certificazioni AWS Certified Cloud Practitioner e Oracle OCI. Mi occupo della progettazione e gestione di infrastrutture cloud, on-premise e ibride, con focus su deployment, integrazione e rilascio continuo di applicativi.</p>
+      <p id="about-p2">La mia competenza spazia dall&#39;orchestrazione di architetture a microservizi basate su container, alla gestione middleware, fino allo sviluppo di soluzioni di IT Automation e Infrastructure as Code per ottimizzare processi e ridurre il debito operativo.</p>
+      <p id="about-p3">Unisco un background solido nello sviluppo software e nell&#39;analisi dei dati a un approccio metodologico orientato al problem-solving. Sono curioso, proattivo e appassionato di innovazione tecnologica continua.</p>
+      <div class="about-tags">
+        <span class="tag">&#9729; Cloud AWS</span><span class="tag">&#9729; Oracle OCI</span><span class="tag">&#9881; DevOps</span><span class="tag">&#128257; CI/CD</span><span class="tag">&#128230; Kubernetes</span><span class="tag">&#127959; IaC</span><span class="tag">&#128202; Data Analysis</span>
+      </div>
+      <div style="margin-top:1.75rem;">
+        <a href="assets/pdf/Alessio Bennardo.pdf" download class="btn-primary" style="font-size:.875rem;" id="about-cv-btn">&#11015; Scarica CV</a>
+      </div>
+    </div>
+    <div class="fade-up">
+      <div class="about-img-card">
+        <img src="assets/img/profile.jpg" alt="Alessio Bennardo">
+        <h3>Alessio Bennardo</h3>
+        <p class="role">Cloud &amp; DevOps Engineer</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-label">// 02. competenze</div>
+  <div class="section-title fade-up">Skills</div>
+  <p class="section-sub fade-up" id="skills-sub">Tecnologie e strumenti con cui lavoro quotidianamente su infrastrutture cloud enterprise.</p>
+  <div class="skills-grid">
+    <div class="skill-card fade-up"><div class="skill-card-header"><div class="skill-icon">&#9729;</div><h3>Cloud Platforms</h3></div><div class="skill-tags"><span class="skill-tag">AWS</span><span class="skill-tag">Oracle OCI</span><span class="skill-tag">Azure</span><span class="skill-tag">Multicloud</span></div></div>
+    <div class="skill-card fade-up"><div class="skill-card-header"><div class="skill-icon">&#9881;</div><h3>CI/CD &amp; Automation</h3></div><div class="skill-tags"><span class="skill-tag">Jenkins</span><span class="skill-tag">GitLab CI</span><span class="skill-tag">Ansible</span></div></div>
+    <div class="skill-card fade-up"><div class="skill-card-header"><div class="skill-icon">&#128230;</div><h3>Container &amp; Orchestration</h3></div><div class="skill-tags"><span class="skill-tag">Docker</span><span class="skill-tag">Kubernetes (K8s)</span></div></div>
+    <div class="skill-card fade-up"><div class="skill-card-header"><div class="skill-icon">&#128421;</div><h3>OS &amp; Networking</h3></div><div class="skill-tags"><span class="skill-tag">Linux</span><span class="skill-tag">Windows</span><span class="skill-tag">Networking</span><span class="skill-tag">Cisco</span></div></div>
+    <div class="skill-card fade-up"><div class="skill-card-header"><div class="skill-icon">&#128187;</div><h3>Scripting &amp; Development</h3></div><div class="skill-tags"><span class="skill-tag">Python</span><span class="skill-tag">Bash</span><span class="skill-tag">Java</span><span class="skill-tag">JavaScript</span><span class="skill-tag">PHP</span><span class="skill-tag">SQL</span></div></div>
+    <div class="skill-card fade-up"><div class="skill-card-header"><div class="skill-icon">&#128202;</div><h3>Data &amp; ML</h3></div><div class="skill-tags"><span class="skill-tag">NumPy</span><span class="skill-tag">Pandas</span><span class="skill-tag">Scikit-learn</span><span class="skill-tag">Google Analytics</span></div></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- QUALIFICHE -->
+<section id="qualifiche">
+  <div class="section-label">// 03. percorso</div>
+  <div class="section-title fade-up" id="qual-title">Qualifiche</div>
+  <p class="section-sub fade-up" id="qual-sub">Il mio percorso formativo e professionale.</p>
+  <div class="qual-grid">
+    <div class="fade-up">
+      <div class="qual-col-title">&#127891; <span id="col-edu">Formazione</span></div>
+      <div class="timeline">
+        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card"><div class="timeline-date">2024</div><h3>AWS Cloud Engineer Academy</h3><p class="company">AWS &amp; Edgemony</p><p id="edu-aws">Academy di 12 settimane in partnership con AWS Re/Start. Compute, Storage, Networking, Databases, Security, Serverless, Containers, Linux, Python.</p></div></div>
+        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card"><div class="timeline-date">2023</div><h3 id="edu-degree-title">Laurea in Ingegneria Informatica</h3><p class="company">Universit&#224; degli Studi di Catania</p><p id="edu-degree-desc">Tesi: <em>Big Data e machine learning in ambito calcistico: gli Expected Goals (xG)</em></p></div></div>
+        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card"><div class="timeline-date">2017</div><h3 id="edu-diploma-title">Diploma Perito Informatico &amp; Telecomunicazioni</h3><p class="company">I.T.I. &quot;E. Fermi&quot;, Siracusa</p></div></div>
+      </div>
+    </div>
+    <div class="fade-up">
+      <div class="qual-col-title">&#128188; <span id="col-work">Lavoro</span></div>
+      <div class="timeline">
+        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card"><div class="timeline-date" id="work1-date">Mag 2024 &ndash; presente</div><h3>Cloud &amp; DevOps Engineer</h3><p class="company">Kirey Group</p><ul id="work1-list"><li>Progettazione e gestione di infrastrutture Cloud, on-premise e ibride (AWS/Azure).</li><li>Orchestrazione di architetture a microservizi su container e gestione middleware.</li><li>Sviluppo di soluzioni IaC per automazione, patching e ottimizzazione dei sistemi.</li></ul><div class="stack-tags"><span class="stack-tag">AWS</span><span class="stack-tag">Azure</span><span class="stack-tag">Docker</span><span class="stack-tag">K8s</span><span class="stack-tag">Ansible</span><span class="stack-tag">Jenkins</span><span class="stack-tag">GitLab CI</span><span class="stack-tag">Bash</span><span class="stack-tag">Python</span></div></div></div>
+        <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card"><div class="timeline-date" id="work2-date">Ott 2022 &ndash; Mar 2023</div><h3 id="work2-title">Sistemista Informatico (Internship)</h3><p class="company">Gruppomega S.p.A.</p><p id="work2-desc">Progettazione e configurazione di sistemi di rete in qualit&#224; di System Engineer.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CERTIFICAZIONI -->
+<section id="certificazioni">
+  <div class="section-label">// 04. certificazioni</div>
+  <div class="section-title fade-up" id="cert-title">Certificazioni</div>
+  <p class="section-sub fade-up" id="cert-sub">Certificazioni cloud e corsi professionali conseguiti.</p>
+  <div class="cert-grid">
+    <div class="cert-card fade-up">
+      <div class="cert-img-wrap cert-aws-badge">
+        <img src="assets/img/cert-aws-badge.png" alt="AWS Certified Cloud Practitioner" style="height:120px;width:auto;object-fit:contain;">
+      </div>
+      <div class="cert-info">
+        <h4>AWS Certified Cloud Practitioner</h4>
+        <p>Amazon Web Services</p>
+        <span class="cert-badge cert-badge-aws">Cloud</span>
+      </div>
+    </div>
+    <div class="cert-card fade-up">
+      <img src="assets/img/cert-oracle-multicloud.jpg" alt="Oracle OCI Multicloud Architect">
+      <div class="cert-info"><h4>OCI 2025 Multicloud Architect Professional</h4><p>Oracle</p><span class="cert-badge cert-badge-oracle">Cloud</span></div>
+    </div>
+    <div class="cert-card fade-up">
+      <img src="assets/img/cert-oracle-ai.jpg" alt="Oracle OCI AI Foundations">
+      <div class="cert-info"><h4>OCI 2025 AI Foundations Associate</h4><p>Oracle</p><span class="cert-badge cert-badge-oracle">AI / ML</span></div>
+    </div>
+    <div class="cert-card fade-up">
+      <img src="assets/img/cert-oracle-foundations.jpg" alt="Oracle OCI Foundations">
+      <div class="cert-info"><h4>OCI 2025 Foundations Associate</h4><p>Oracle</p><span class="cert-badge cert-badge-oracle">Cloud</span></div>
+    </div>
+    <div class="cert-card fade-up">
+      <img src="assets/img/cert-oracle-data.jpg" alt="Oracle Data Platform">
+      <div class="cert-info"><h4>Oracle Data Platform Foundations Associate</h4><p>Oracle</p><span class="cert-badge cert-badge-oracle">Data</span></div>
+    </div>
+    <div class="cert-card fade-up">
+      <img src="assets/img/cert-docker-ibm.jpg" alt="Docker Essentials IBM">
+      <div class="cert-info">
+        <h4>Docker Essentials: A Developer Introduction</h4>
+        <p>IBM</p>
+        <span class="cert-badge cert-badge-ibm">Container</span>
+      </div>
+    </div>
+    <div class="cert-card fade-up">
+      <img src="assets/img/cert-devops-fundamentals.jpg" alt="DevOps Fundamentals">
+      <div class="cert-info">
+        <h4>DevOps Fundamentals</h4>
+        <p>Udemy</p>
+        <span class="cert-badge cert-badge-devops">DevOps</span>
+      </div>
+    </div>
+    <div class="cert-card fade-up">
+      <img src="assets/img/Cisco.jpg" alt="Cisco Networking">
+      <div class="cert-info"><h4>Cisco Networking Labs</h4><p>Udemy</p><span class="cert-badge">Networking</span></div>
+    </div>
+    <div class="cert-card fade-up">
+      <img src="assets/img/cert-data-science-ml.jpg" alt="Data Science ML">
+      <div class="cert-info">
+        <h4>Data Science &amp; Machine Learning</h4>
+        <p>Udemy</p>
+        <span class="cert-badge">ML</span>
+      </div>
+    </div>
+    <div class="cert-card fade-up">
+      <img src="assets/img/cert-data-analytics-python.jpg" alt="Data Analytics Python">
+      <div class="cert-info">
+        <h4>Data Analytics A-Z with Python</h4>
+        <p>Udemy</p>
+        <span class="cert-badge">Data</span>
+      </div>
+    </div>
+    <div class="cert-card fade-up">
+      <img src="assets/img/Google.jpg" alt="Google Analytics">
+      <div class="cert-info"><h4>Google Analytics</h4><p>Google</p><span class="cert-badge">Analytics</span></div>
+    </div>
+    <div class="cert-card fade-up">
+      <img src="assets/img/CSS, Bootstrap,JavaScript.jpg" alt="Web Dev">
+      <div class="cert-info"><h4>CSS, Bootstrap &amp; JavaScript</h4><p>Udemy</p><span class="cert-badge">Frontend</span></div>
+    </div>
+    <div class="cert-card fade-up">
+      <img src="assets/img/cert-spanish.jpg" alt="Spanish Vocabulary">
+      <div class="cert-info">
+        <h4>Spanish Vocabulary: Meeting People</h4>
+        <p>Coursera / UC Davis</p>
+        <span class="cert-badge">Lingua</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label">// 05. contatti</div>
+  <div class="section-title fade-up" id="contact-title-h">Contattami</div>
+  <p class="section-sub fade-up" id="contact-sub">Sono disponibile per opportunit&#224; lavorative, collaborazioni tecniche o semplicemente per una chiacchierata.</p>
+  <div class="contact-grid">
+    <div class="fade-up">
+      <a href="mailto:alessio_bennardo@hotmail.it" class="contact-item"><span class="contact-icon">&#9993;</span><div><strong>Email</strong><span>alessio_bennardo@hotmail.it</span></div></a>
+      <a href="https://www.linkedin.com/in/alessiobennardo/" class="contact-item" target="_blank" rel="noopener"><span class="contact-icon" style="font-family:'JetBrains Mono',monospace;font-weight:600;">in</span><div><strong>LinkedIn</strong><span>linkedin.com/in/alessiobennardo</span></div></a>
+      <a href="https://github.com/alessiobennardo" class="contact-item" target="_blank" rel="noopener"><span class="contact-icon">&#128025;</span><div><strong>GitHub</strong><span>github.com/alessiobennardo</span></div></a>
+      <a href="https://wa.me/393271439915" class="contact-item" target="_blank" rel="noopener"><span class="contact-icon">&#128172;</span><div><strong>WhatsApp</strong><span>+39 327 143 9915</span></div></a>
+    </div>
+    <div class="fade-up">
+      <form id="contactForm">
+        <div class="form-group" id="fg-name"><label id="lbl-name">NOME</label><input type="text" name="name" id="inp-name" placeholder="Il tuo nome"><span class="error-msg" id="err-name">Inserisci il tuo nome</span></div>
+        <div class="form-group" id="fg-email"><label id="lbl-email">EMAIL</label><input type="email" name="email" id="inp-email" placeholder="tua@email.com"><span class="error-msg" id="err-email">Inserisci un'email valida</span></div>
+        <div class="form-group" id="fg-message"><label id="lbl-message">MESSAGGIO</label><textarea name="message" id="inp-message" placeholder="Scrivi qui il tuo messaggio..."></textarea><span class="error-msg" id="err-message">Inserisci un messaggio</span></div>
+        <button type="submit" class="btn-primary" id="submit-btn" style="width:100%;justify-content:center;">&#9993; <span id="submit-text">Invia Messaggio</span></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&#169; 2026 <a href="#home">Alessio Bennardo</a> &mdash; Cloud &amp; DevOps Engineer &nbsp;&middot;&nbsp; Sicilia, Italia</p>
+</footer>
+
+<a href="#home" class="scrollup" id="scrollup">&#8593;</a>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
